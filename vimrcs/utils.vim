@@ -1,3 +1,23 @@
+" IM Control
+set iminsert=1
+set imsearch=1
+set imactivatefunc=ImActivate
+
+function! ImActivate(active)
+  if a:active
+    call system('fcitx-remote -o')
+  else
+    call system('fcitx-remote -c')
+  endif
+endfunction
+
+set imstatusfunc=ImStatus
+
+function! ImStatus()
+  return system('fcitx-remote')[0] is# '2'
+endfunction
+
+
 " Copy to clipboard
 vmap cp "+ygv
 
