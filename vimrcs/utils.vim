@@ -11,7 +11,7 @@ au BufreadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 " Turn persistent undo on
 try
-	set undodir=~/.vimruntime/undodir
+	set undodir=~/.vimruntime/tmp/undodir
 	set undofile
 catch
 endtry
