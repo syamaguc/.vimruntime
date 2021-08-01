@@ -1,4 +1,9 @@
 "==================
+" => Color scheme
+"==================
+colorscheme dracula
+
+"==================
 " => Statusline
 "==================
 set laststatus=2
@@ -37,6 +42,12 @@ map <leader>nf :NERDTreeFind<cr>
 "if !argc()
 "  autocmd vimenter * NERDTree|normal gg7j
 "endif
+
+"==================
+" => Ranger
+"==================
+let g:ranger_map_keys = 0
+
 
 "==================
 " => Staritfy

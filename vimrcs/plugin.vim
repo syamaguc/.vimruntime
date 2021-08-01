@@ -14,12 +14,19 @@ Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'francoiscabrol/ranger.vim'
 
 " Status line
 Plug 'itchyny/lightline.vim'
 
+" Dracula
+Plug 'dracula/vim'
+
 " Git
 Plug 'tpope/vim-fugitive'
+
+" Misc
+Plug 'lilydjwg/colorizer'
 
 " Other
 Plug 'pbondoer/vim-42header'
