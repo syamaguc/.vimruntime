@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'francoiscabrol/ranger.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Status line
 Plug 'itchyny/lightline.vim'
