@@ -35,6 +35,7 @@ nnoremap <silent> <leader>f :Files<CR>
 nnoremap <silent> <leader>g :Rg<CR>
 
 " Tab
+nmap <leader>1 :tabfirst<cr>
 nmap <C-t> :tabnew<cr>
 nmap <C-w> :tabclose<cr>
 nmap <C-q> :tabonly<cr>
@@ -52,4 +53,3 @@ autocmd! bufwritepost ~/.vimruntime/vimrcs/* source ~/.vimrc
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
-

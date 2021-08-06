@@ -9,6 +9,9 @@ Plug 'mattn/vim-lsp-icons'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 
+" Syntax
+Plug 'sheerun/vim-polyglot'
+
 " Explorer 
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
@@ -23,14 +26,18 @@ Plug 'itchyny/lightline.vim'
 " Dracula
 Plug 'dracula/vim'
 
+" Edit
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Misc
 Plug 'lilydjwg/colorizer'
 
 " Other
 Plug 'pbondoer/vim-42header'
-
 
 call plug#end()

@@ -1,5 +1,5 @@
 " Leader key
-let mapleader = "\<space>"
+let mapleader = " "
 
 syntax on
 filetype plugin on
@@ -8,6 +8,7 @@ filetype indent on
 " Line
 set so=7
 set number
+" if set cursorline, tmux transparent doesn't work
 set cursorline
 set ruler
 

@@ -49,7 +49,6 @@ if filereadable(expand("~/.myvimrc"))
 endif
 
 " ========================= myvimrc ========================= 
-
 syntax on
 set expandtab
 set smarttab
