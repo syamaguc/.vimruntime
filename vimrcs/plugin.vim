@@ -29,6 +29,7 @@ Plug 'dracula/vim'
 " Edit
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'jiangmiao/auto-pairs'
 
 " Git
 Plug 'tpope/vim-fugitive'
