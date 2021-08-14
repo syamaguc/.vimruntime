@@ -37,6 +37,7 @@ Plug 'airblade/vim-gitgutter'
 
 " Misc
 Plug 'lilydjwg/colorizer'
+Plug 'liuchengxu/vim-which-key'
 
 " Other
 Plug 'pbondoer/vim-42header'

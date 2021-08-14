@@ -16,6 +16,9 @@ try
 catch
 endtry
 
+" Check file absolutely path
+command! FP :echo expand("%:p")
+
 " Quickfix
 
 if executable('rg')

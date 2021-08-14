@@ -1,5 +1,7 @@
 " Leader key
-let mapleader = " "
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+
 
 syntax on
 filetype plugin on

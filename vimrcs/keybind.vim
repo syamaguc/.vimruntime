@@ -2,6 +2,7 @@
 " => Editing
 " -------------
 inoremap <silent> jj <ESC>
+imap <silent> kk <ESC>f)a
 noremap j gj
 noremap k gk
 noremap <leader>w :w<CR>
@@ -9,6 +10,9 @@ noremap <leader>w :w<CR>
 " -------------
 " => Moving
 " -------------
+" jump motion
+noremap <C-i> <C-i>
+
 " Smart way to move between windows
 noremap <C-j> <C-W>j
 noremap <C-k> <C-W>k
@@ -39,7 +43,7 @@ nmap <leader>1 :tabfirst<cr>
 nmap <C-t> :tabnew<cr>
 nmap <C-w> :tabclose<cr>
 nmap <C-q> :tabonly<cr>
-nmap <TAB> :tabnext<cr>
+nmap <leader><TAB> :tabnext<cr>
 
 " -------------
 " => Other

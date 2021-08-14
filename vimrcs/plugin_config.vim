@@ -162,3 +162,12 @@ nmap        s   <Plug>(vsnip-select-text)
 xmap        s   <Plug>(vsnip-select-text)
 nmap        S   <Plug>(vsnip-cut-text)
 xmap        S   <Plug>(vsnip-cut-text)
+
+
+"==================
+" => which key
+"==================
+nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
+
+set timeoutlen=500
