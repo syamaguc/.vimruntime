@@ -58,7 +58,13 @@ map <leader>nf :NERDTreeFind<cr>
 "==================
 let g:ranger_map_keys = 0
 
-
+"==================
+" => vimwiki
+"==================
+let g:vimwiki_list = [
+      \ {'path': '~/Dropbox/vimwiki', 'syntax': 'markdown', 'ext': '.md'},
+      \ {'html_path': '~/Dropbox/vimwiki_html'},
+      \ ]
 "==================
 " => Staritfy
 "==================
@@ -93,6 +99,7 @@ let g:startify_bookmarks = [
             \ { 'c': '~/config' },
             \ { 'v': '~/.vimruntime' },
             \ { 'z': '~/config/zsh/.config/zsh' },
+            \ { 't': '~/Dropbox/vimwiki/todo.md' },
             \ ]
 
 "==================
