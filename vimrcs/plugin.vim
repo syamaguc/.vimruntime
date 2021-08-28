@@ -11,6 +11,7 @@ Plug 'hrsh7th/vim-vsnip-integ'
 
 " Syntax
 Plug 'sheerun/vim-polyglot'
+Plug 'plasticboy/vim-markdown'
 
 " Explorer 
 Plug 'mhinz/vim-startify'

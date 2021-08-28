@@ -65,6 +65,8 @@ let g:vimwiki_list = [
       \ {'path': '~/Dropbox/vimwiki', 'syntax': 'markdown', 'ext': '.md'},
       \ {'html_path': '~/Dropbox/vimwiki_html'},
       \ ]
+let g:vimwiki_markdown_link_ext = 1
+nmap <leader>c  :VimwikiToggleListItem<cr>
 "==================
 " => Staritfy
 "==================
