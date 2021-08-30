@@ -2,7 +2,7 @@
 " => Color scheme
 "==================
 if exists('$TMUX')
-  colorscheme default
+  colorscheme dracula
 else
   colorscheme dracula
 endif
