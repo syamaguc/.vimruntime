@@ -40,6 +40,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'lilydjwg/colorizer'
 Plug 'liuchengxu/vim-which-key'
 Plug 'vimwiki/vimwiki'
+Plug 'blindFS/vim-taskwarrior'
 
 " Other
 Plug 'pbondoer/vim-42header'
