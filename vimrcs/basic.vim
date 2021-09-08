@@ -14,9 +14,6 @@ set number
 set cursorline
 set ruler
 
-" Clipboard
-set clipboard+=unnamed
-
 " Command mode complement
 set nocompatible
 set wildmenu

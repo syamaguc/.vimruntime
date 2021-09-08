@@ -1,8 +1,8 @@
 " Copy to clipboard
 vmap cp "+ygv
-
 " paste
 nmap paste "+p}k
+" IM Control for Linux
 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
@@ -68,26 +68,4 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-
-" IM Control for Linux
-if has("mac") || has("macunix")
-
-else
-    function! ImActivate(active)
-      if a:active
-        call system('fcitx-remote -o')
-      else
-        call system('fcitx-remote -c')
-      endif
-    endfunction
-    
-    function! ImStatus()
-      return system('fcitx-remote')[0] is# '2'
-    endfunction
-    
-    set iminsert=1
-    set imsearch=1
-    set imactivatefunc=ImActivate
-    set imstatusfunc=ImStatus
-endif
 
