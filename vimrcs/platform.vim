@@ -1,4 +1,7 @@
-if has('unix') 
+if has("mac") || has("macunix")
+  " Clipboard
+  set clipboard+=unnamed
+elseif has('unix') 
   " Clipboard
   set clipboard+=unnamedplus
   " IM control
@@ -18,8 +21,5 @@ if has('unix')
   set imsearch=1
   set imactivatefunc=ImActivate
   set imstatusfunc=ImStatus
-elseif has("mac") || has("macunix")
-  " Clipboard
-  set clipboard+=unnamed
 elseif has('win32') || has ('win64')
 endif
