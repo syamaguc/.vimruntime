@@ -13,6 +13,8 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
 Plug 'jbmorgado/vim-pine-script'
+Plug 'cacharle/c_formatter_42.vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " Explorer 
 Plug 'mhinz/vim-startify'
@@ -41,6 +43,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'lilydjwg/colorizer'
 Plug 'liuchengxu/vim-which-key'
 Plug 'vimwiki/vimwiki'
+Plug 'vim-denops/denops.vim'
+Plug 'kat0h/bufpreview.vim'
+
 
 " snipets
 Plug 'honza/vim-snippets'

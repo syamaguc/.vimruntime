@@ -59,14 +59,24 @@ map <leader>nf :NERDTreeFind<cr>
 let g:ranger_map_keys = 0
 
 "==================
+" => Markdown
+"==================
+let g:vim_markdown_folding_disabled = 1
+
+
+"==================
 " => vimwiki
 "==================
+let g:vimwiki_root = $HOME . '/Dropbox/vimwiki'
+
 let g:vimwiki_list = [
       \ {'path': '~/Dropbox/vimwiki', 'syntax': 'markdown', 'ext': '.md'},
       \ {'html_path': '~/Dropbox/vimwiki_html'},
       \ ]
-let g:vimwiki_markdown_link_ext = 1
+
 nmap <leader>c  :VimwikiToggleListItem<cr>
+let g:vimwiki_markdown_link_ext = 1
+let g:vimwiki_global_ext = 0
 "==================
 " => Staritfy
 "==================

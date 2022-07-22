@@ -2,9 +2,9 @@
 let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
 
-syntax on
 filetype plugin on
 filetype indent on
+syntax on
 
 " show complete if there are just 1 candidate
 set completeopt+=menuone
