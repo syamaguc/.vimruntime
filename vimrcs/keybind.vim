@@ -57,3 +57,15 @@ autocmd! bufwritepost ~/.vimruntime/vimrcs/* source ~/.vimrc
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
+
+" Copy to clipboard
+vmap cp "+ygv
+
+" paste
+nmap paste "+p}k
+
+" sudo w
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
+" Check file absolutely path
+command! FP :echo expand("%:p")

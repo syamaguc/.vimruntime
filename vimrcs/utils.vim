@@ -1,26 +1,13 @@
-" Copy to clipboard
-vmap cp "+ygv
-" paste
-nmap paste "+p}k
-" IM Control for Linux
-
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
 " Return to last edit when opening files!
 au BufreadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-" Turn persistent undo on
 try
-	set undodir=~/.vimruntime/tmp/undodir
-	set undofile
+    set undodir=~/.vimruntime/tmp/undodir
+    set undofile
 catch
 endtry
 
-" Check file absolutely path
-command! FP :echo expand("%:p")
-
 " Quickfix
-
 if executable('rg')
     let &grepprg = 'rg --vimgrep --hidden'
     set grepformat=%f:%l:%c:%m
