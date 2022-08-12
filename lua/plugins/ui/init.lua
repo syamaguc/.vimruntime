@@ -1,0 +1,5 @@
+require("plugins.ui.colorscheme")
+require("plugins.ui.lualine")
+require("plugins.ui.bufferline")
+require("plugins.ui.colorizer")
+require("plugins.ui.alpha")
