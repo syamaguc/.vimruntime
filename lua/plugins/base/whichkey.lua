@@ -59,7 +59,7 @@ local mappings = {
 	w = { "<cmd>w<CR>", "Write" },
 	e = { "<cmd>NvimTreeToggle<CR>", "nvim-tree" },
 	["<CR>"] = { "<cmd>nohlsearch<CR>", "No HL" },
-	["<ESC>"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" },
+	["<ESC>"] = { '<cmd>lua require("core.functions").smart_quit()<CR>', "Quit" },
 	["/"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', "Comment" },
 
 	f = {
