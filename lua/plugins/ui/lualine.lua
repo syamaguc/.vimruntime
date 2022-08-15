@@ -3,8 +3,8 @@ if not status then
   return
 end
 
-lualine.setup {
+lualine.setup({
   options = {
     theme = "tokyonight",
   },
-}
+})

@@ -100,20 +100,17 @@ return packer.startup(function(use)
 
 	-- Fuzzy Finder/Telescope
 	use("nvim-telescope/telescope.nvim")
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use("tom-anders/telescope-vim-bookmarks.nvim")
+	use("sudormrfbin/cheatsheet.nvim")
 
 	-- Utility
+	use("tpope/vim-repeat")
 	use("windwp/nvim-autopairs")
 	use("kylechui/nvim-surround") -- ysiw
 	use("norcalli/nvim-colorizer.lua")
 	use("numToStr/Comment.nvim")
-	use({
-		"folke/todo-comments.nvim",
-		requires = "nvim-lua/plenary.nvim",
-		config = function()
-			require("todo-comments").setup({})
-		end,
-	})
+	use("folke/todo-comments.nvim")
 	use("moll/vim-bbye") -- smart q
 	use("ghillb/cybu.nvim") -- cycle buffer
 	use("tversteeg/registers.nvim") -- registers
@@ -126,8 +123,16 @@ return packer.startup(function(use)
 
 	-- File Explorer
 	use("kyazdani42/nvim-tree.lua")
+
 	-- Quickfix
-	-- use("kevinhwang91/nvim-bqf")
+	use("kevinhwang91/nvim-bqf")
+	-- optional
+	use({
+		"junegunn/fzf",
+		run = function()
+			vim.fn["fzf#install"]()
+		end,
+	})
 
 	-- Git
 	use("lewis6991/gitsigns.nvim")

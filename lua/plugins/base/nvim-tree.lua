@@ -5,7 +5,7 @@ end
 
 local callback = require("nvim-tree.config").nvim_tree_callback
 
-nvim_tree.setup {
+nvim_tree.setup({
   ignore_ft_on_setup = {
     "alpha",
   },
@@ -35,10 +35,10 @@ nvim_tree.setup {
     mappings = {
       custom_only = false,
       list = {
-        { key = { "l", "<CR>", "o" }, cb = callback "edit" },
-        { key = "s", cb = callback "split" },
-        { key = "v", cb = callback "vsplit" },
+        { key = { "l", "<CR>", "o" }, cb = callback("edit") },
+        { key = "s", cb = callback("split") },
+        { key = "v", cb = callback("vsplit") },
       },
     },
   },
-}
+})

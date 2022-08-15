@@ -19,8 +19,8 @@ null_ls.setup({
 		formatting.gofmt,
 		formatting.clang_format,
 		diagnostics.flake8,
-		diagnostics.luacheck,
-		diagnostics.eslint,
+		-- diagnostics.luacheck,
+		-- diagnostics.eslint,
 		diagnostics.shellcheck,
 	},
 })

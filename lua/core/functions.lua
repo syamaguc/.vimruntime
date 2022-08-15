@@ -9,7 +9,7 @@ function M.smart_quit()
 		}, function(input)
       if input == "w" then
 				vim.cmd("w")
-				vim.cmd("Bdelete")
+				vim.cmd("q")
 			elseif input == "q" then
 				vim.cmd("q!")
 			end

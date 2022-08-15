@@ -18,14 +18,14 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
--- Smart quit
-keymap("n", "Q", "<cmd>Bdelete!<CR>", opts)
--- keymap("n", "<ESC><ESC>", "<cmd>lua require('core.functions').smart_quit()<CR>", opts)
+keymap("n", "Q", "<cmd>Bdelete<CR>", opts)
+keymap("n", "<leader><ESC>", "<cmd>lua require('core.functions').smart_quit()<CR>", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
+
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Buffer navigation
@@ -46,4 +46,15 @@ keymap("v", ">", ">gv", opts)
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 
+vim.cmd [[
+  function! QuickFixToggle()
+    if empty(filter(getwininfo(), 'v:val.quickfix'))
+      copen
+    else
+      cclose
+    endif
+  endfunction
+]]
+
+keymap("n", "<m-q>", ":call QuickFixToggle()<cr>", opts)
 return M

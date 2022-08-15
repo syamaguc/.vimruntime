@@ -1,6 +1,6 @@
 local status, neogen = pcall(require, "neogen")
 if not status then
-	return
+  return
 end
 
 neogen.setup()
