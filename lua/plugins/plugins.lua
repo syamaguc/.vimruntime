@@ -63,6 +63,7 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim") -- Formatters and linters
 	use("onsails/lspkind.nvim") -- show icon for cmp
 	use("j-hui/fidget.nvim")
+	use("https://git.sr.ht/~whynothugo/lsp_lines.nvim")
 
 	-- Completion
 	use("hrsh7th/nvim-cmp")
