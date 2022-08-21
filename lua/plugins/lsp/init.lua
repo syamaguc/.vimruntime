@@ -2,6 +2,7 @@ M = {}
 require("plugins.lsp.mason")
 require("plugins.lsp.null-ls")
 require("plugins.lsp.lsp-lines")
+require("plugins.lsp.rust-tools")
 
 M.server_capabilities = function()
 	local active_clients = vim.lsp.get_active_clients()

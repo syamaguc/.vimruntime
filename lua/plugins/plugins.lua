@@ -92,6 +92,11 @@ return packer.startup(function(use)
 		end,
 	})
 	use("p00f/nvim-ts-rainbow")
+  -- Rust
+  use 'simrat39/rust-tools.nvim'
+
+  -- Debug
+  use 'mfussenegger/nvim-dap'
 
 	-- UI
 	use("folke/tokyonight.nvim") -- Colorscheme

@@ -16,6 +16,7 @@ local servers = {
 	"pyright",
 	"bashls",
 	"clangd",
+	"rust-analyzer",
 }
 
 mason.setup()
