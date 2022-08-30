@@ -99,7 +99,7 @@ local mappings = {
 		name = "LSP",
 		l = { "<cmd>lua require('lsp_lines').toggle()<cr>", "Toggle lsp_lines" },
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-		f = { "<cmd>lua vim.lsp.buf.format({ async = true })<cr>", "Format" },
+		f = { "<cmd>lua vim.lsp.buf.formatting_sync()<cr>", "Format" },
 		j = {
 			"<cmd>lua vim.diagnostic.goto_next({buffer=0})<CR>",
 			"Next Diagnostic",
