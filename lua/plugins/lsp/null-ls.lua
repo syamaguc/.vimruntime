@@ -19,6 +19,7 @@ null_ls.setup({
 		formatting.jq,
 		formatting.gofmt,
 		formatting.markdownlint,
+		formatting.shfmt,
 		formatting.clang_format,
 		diagnostics.flake8,
 		diagnostics.markdownlint,
