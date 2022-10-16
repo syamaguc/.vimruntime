@@ -61,6 +61,7 @@ local mappings = {
 	["<CR>"] = { "<cmd>nohlsearch<CR>", "No HL" },
 	["<ESC>"] = { '<cmd>lua require("core.functions").smart_quit()<CR>', "Quit" },
 	["/"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', "Comment" },
+	K = { "<cmd>Lspsaga hover_doc<CR>", "Hover doc" },
 
 	f = {
 		name = "Find",
@@ -98,20 +99,13 @@ local mappings = {
 	l = {
 		name = "LSP",
 		l = { "<cmd>lua require('lsp_lines').toggle()<cr>", "Toggle lsp_lines" },
-		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+		g = { "<cmd>Lspsaga lsp_finder<CR>", "Lsp Finder" },
+		r = { "<cmd>Lspsaga rename<CR>", "Rename" },
+		a = { "<cmd>Lspsaga code_action<cr>", "Code Action" },
 		f = { "<cmd>lua vim.lsp.buf.format()<cr>", "Format" },
-		j = {
-			"<cmd>lua vim.diagnostic.goto_next({buffer=0})<CR>",
-			"Next Diagnostic",
-		},
-		k = {
-			"<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>",
-			"Prev Diagnostic",
-		},
-		-- I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
-		-- i = { "<cmd>LspInfo<cr>", "Info" },
-		-- c = { "<cmd>lua require('plugins.lsp').server_capabilities()<cr>", "Get Capabilities" },
-		-- l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
+		d = { "<cmd>Lspsaga peek_definition<CR>", "Peeek Definition" },
+		j = { "<cmd>Lspsaga diagnostic_jump_next<CR>", "Next Diagnostic" },
+		k = { "<cmd>Lspsaga diagnostic_jump_prev<CR>", "Prev Diagnostic" },
 	},
 
 	t = {

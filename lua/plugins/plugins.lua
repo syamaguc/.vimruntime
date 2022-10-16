@@ -64,6 +64,17 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim") -- show icon for cmp
 	use("j-hui/fidget.nvim")
 	use("https://git.sr.ht/~whynothugo/lsp_lines.nvim")
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		config = function()
+			local saga = require("lspsaga")
+
+			saga.init_lsp_saga({
+				-- your configuration
+			})
+		end,
+	})
 
 	-- Completion
 	use("hrsh7th/nvim-cmp")
@@ -83,6 +94,26 @@ return packer.startup(function(use)
 	-- Snippet
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
+	-- Copilot
+	use("github/copilot.vim")
+	use({
+		"zbirenbaum/copilot.lua",
+		event = { "VimEnter" },
+		config = function()
+			vim.defer_fn(function()
+				require("copilot").setup()
+			end, 100)
+		end,
+	})
+	use({
+		"zbirenbaum/copilot-cmp",
+		after = { "copilot.lua" },
+		config = function()
+			require("copilot_cmp").setup()
+		end,
+	})
+	-- Tabnine
+	use({ "tzachar/cmp-tabnine", run = "./install.sh" })
 
 	-- Syntax/Treesitter
 	use({
@@ -92,11 +123,11 @@ return packer.startup(function(use)
 		end,
 	})
 	use("p00f/nvim-ts-rainbow")
-  -- Rust
-  use 'simrat39/rust-tools.nvim'
+	-- Rust
+	use("simrat39/rust-tools.nvim")
 
-  -- Debug
-  use 'mfussenegger/nvim-dap'
+	-- Debug
+	use("mfussenegger/nvim-dap")
 
 	-- UI
 	use("folke/tokyonight.nvim") -- Colorscheme

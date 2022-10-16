@@ -29,6 +29,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 		"help",
 		"man",
 		"lspinfo",
+		"lspsaga",
 		"spectre_panel",
 		"DressingSelect",
 		"Markdown",
