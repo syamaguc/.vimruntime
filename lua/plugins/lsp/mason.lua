@@ -11,7 +11,8 @@ end
 local servers = {
 	"jsonls",
 	"yamlls",
-	"sumneko_lua",
+  --"sumneko_lua",
+  "lua_ls",
 	"tsserver",
 	"pyright",
 	"bashls",
