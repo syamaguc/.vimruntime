@@ -3,7 +3,7 @@ if not status then
 	return
 end
 
-tabnine.setup({
+tabnine:setup({
 	max_lines = 1000,
 	max_num_results = 20,
 	sort = true,
@@ -16,3 +16,4 @@ tabnine.setup({
 	},
 	show_prediction_strength = false,
 })
+

@@ -113,7 +113,7 @@ return packer.startup(function(use)
     end,
   })
   -- Tabnine
-  use({ "tzachar/cmp-tabnine", run = "./install.sh" })
+  use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp"})
 
   -- Syntax/Treesitter
   use({
@@ -124,7 +124,7 @@ return packer.startup(function(use)
   })
   use("p00f/nvim-ts-rainbow")
   -- Rust
-  use("simrat39/rust-tools.nvim")
+  -- use("simrat39/rust-tools.nvim")
 
   -- Debug
   use("mfussenegger/nvim-dap")
