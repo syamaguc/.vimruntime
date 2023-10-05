@@ -57,11 +57,11 @@ return packer.startup(function(use)
   use("folke/lua-dev.nvim")
 
   -- LSP
-  use("neovim/nvim-lspconfig") -- enable LSP
-  use("williamboman/mason.nvim") -- Installer
+  use("neovim/nvim-lspconfig")           -- enable LSP
+  use("williamboman/mason.nvim")         -- Installer
   use("williamboman/mason-lspconfig.nvim")
   use("jose-elias-alvarez/null-ls.nvim") -- Formatters and linters
-  use("onsails/lspkind.nvim") -- show icon for cmp
+  use("onsails/lspkind.nvim")            -- show icon for cmp
   use("j-hui/fidget.nvim")
   use("https://git.sr.ht/~whynothugo/lsp_lines.nvim")
   use({
@@ -92,7 +92,7 @@ return packer.startup(function(use)
   use("ray-x/cmp-treesitter")
   use("lukas-reineke/cmp-rg")
   -- Snippet
-  use("L3MON4D3/LuaSnip") --snippet engine
+  use("L3MON4D3/LuaSnip")             --snippet engine
   use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
   -- Copilot
   use("github/copilot.vim")
@@ -113,7 +113,7 @@ return packer.startup(function(use)
     end,
   })
   -- Tabnine
-  use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp"})
+  use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
 
   -- Syntax/Treesitter
   use({
@@ -130,10 +130,10 @@ return packer.startup(function(use)
   use("mfussenegger/nvim-dap")
 
   -- UI
-  use("folke/tokyonight.nvim") -- Colorscheme
-  use("nvim-lualine/lualine.nvim") -- Statusline
+  use("folke/tokyonight.nvim")                                                                -- Colorscheme
+  use("nvim-lualine/lualine.nvim")                                                            -- Statusline
   use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" }) -- bufferline
-  use("goolord/alpha-nvim") -- Startup
+  use("goolord/alpha-nvim")                                                                   -- Startup
 
   -- Fuzzy Finder/Telescope
   use("nvim-telescope/telescope.nvim")
@@ -148,15 +148,15 @@ return packer.startup(function(use)
   use("norcalli/nvim-colorizer.lua")
   use("numToStr/Comment.nvim")
   use("folke/todo-comments.nvim")
-  use("moll/vim-bbye") -- smart q
-  use("ghillb/cybu.nvim") -- cycle buffer
+  use("moll/vim-bbye")            -- smart q
+  use("ghillb/cybu.nvim")         -- cycle buffer
   use("tversteeg/registers.nvim") -- registers
   use("lukas-reineke/indent-blankline.nvim")
   use("kyazdani42/nvim-web-devicons")
   use("MattesGroeger/vim-bookmarks") -- bookmark
   use("nacro90/numb.nvim")
-  use("danymat/neogen") -- annotations
-  use("windwp/nvim-spectre") -- Renamer
+  use("danymat/neogen")              -- annotations
+  use("windwp/nvim-spectre")         -- Renamer
 
   -- File Explorer
   use("kyazdani42/nvim-tree.lua")
